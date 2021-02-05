@@ -1,0 +1,104 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: rgb(79, 172, 248);
+    background: linear-gradient(rgb(79, 172, 248), rgb(24, 50, 73)); 
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 2%;
+}
+
+h1{
+    font: 600 3rem/3rem 'Georgia', sans-serif;
+    text-shadow: 3px 2px 2px rgb(56, 94, 133);
+}
+
+h1, h2{
+    margin: 0;
+    font-family: 'Gothic+A1', arial, sans-serif;
+    font-weight: 600;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font: 400 1.5rem/1.5rem 'Arial', sans-serif;
+}
+.info-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-display>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    height: 100%;
+}
+.character-choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;    
+}
+
+.character-choice > section > div{
+    margin: 10px;
+}
+
+.character-choice > section > div > img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1000px){
+
+    h1, h2, p{
+        display: flex;
+        word-wrap: normal;
+        text-align: center;
+    }
+    .character-choice {
+        flex-direction: column;
+       align-items: center;
+}
+
+}
