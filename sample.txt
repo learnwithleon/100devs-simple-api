@@ -1,0 +1,21 @@
+"state": "CA",
+"positive": 3243348,
+
+
+
+
+"hospitalizedCurrently": 15676,
+"inIcuCurrently": 4047,
+"death": 40697,
+"positiveIncrease": 3601,
+
+
+
+
+
+"dateChecked": "2021-01-31T02:59:00Z",
+"lastUpdateEt": "1/31/2021 02:59",
+"dateModified": "2021-01-31T02:59:00Z",
+"checkTimeEt": "01/30 21:59",
+
+"As of today there has been a total of ${data.positive} positive cases of COVID-19 in ${data.state}. In the last 24 hours there has been ${data.positiveIncrease} new cases reported in ${data.state}. Currently there are ${data.hospitalizedCurrently} people in ${data.state} hospitals with COVID-19. Of those ${data.hospitalizedCurrently} who are hospitalized currently, ${data.inIcuCurrently} are currently in the ICU."

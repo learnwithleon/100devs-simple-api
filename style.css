@@ -1,0 +1,64 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Lato', sans-serif;
+  color: #30457A;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 30px 0px;
+  background-color: #30457A;
+  color: #ffffff;
+}
+
+.page-title {
+  text-align: center;
+  
+}
+
+.state {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.covid-data {
+  font-size: 1.3em;
+  color: #30457A;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.covid-data p {
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+
+/* .grid-container {
+  display: flex;
+  justify-items: center;
+} */
+
+.title {
+  justify-self: end;
+  margin-top: 25px;
+}
