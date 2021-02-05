@@ -1,0 +1,53 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+html{
+  text-align: center;
+}
+
+ul{
+  list-style: none
+}
+
+h1{
+  font-size: 4rem
+}
+
+p{
+  font-size: 3rem;
+}
+
+ul li{
+  font-size: 2rem
+}
+
+h2{
+  font-size: 2.5rem
+}
+
+h3{
+  font-size: 1.7rem
+}
+
+input{
+  font-size: 1.7rem;
+}
