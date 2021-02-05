@@ -16,11 +16,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   flex-flow: column wrap;
   height: 100vh;
+  margin: 0 auto;
+  padding: 0 10%;
 }
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -30,6 +30,7 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
+  text-align: center;
 }
 
 button {
@@ -37,7 +38,7 @@ button {
   padding: 1.2rem 1.6rem;
   margin-bottom: 4rem;
   border: none;
-  background-color: red;
+  background-color: rgb(255, 72, 0);
   border-radius: 8px;
   font-size: 1.6rem;
 }
