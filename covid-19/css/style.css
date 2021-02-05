@@ -1,0 +1,41 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, .img, h2 {
+  text-align: center;
+}
+img {
+ width: 30rem;
+ height: 22rem;
+ object-fit: contain;
+}
+.facts {
+  display: flex;
+  justify-content: center;
+}
+.facts h3 {
+  width: 20rem;
+  margin: 1%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
