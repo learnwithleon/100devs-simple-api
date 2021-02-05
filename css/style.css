@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#myVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+#content{
+  padding: 0 0 0 30px;
+  position: relative;
+  color: #fbff00;
+}
+ul{
+  list-style-type: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#question{
+  font-size:60px;
+  margin: 0.5em;
+}
+#name{
+  font-size:50px;
+}
+h2{
+  font-size:40px;
+  width: 600px;
+  margin: 0.5em;
+}
+.properties{
+  font-size:30px;
+}
+input{
+  margin: 0 0 0 30px;
+}
+#randomButton{
+  margin: 0 0 0 30px;
+}
