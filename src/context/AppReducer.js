@@ -10,7 +10,7 @@ export default (state, action) => {
             return {
                 ...state,
                 watched: [action.payload, ...state.watched],
-                watchlist: state.watchlist.filter(anime => anime !== action.payload)
+                watchlist: state.watchlist.filter(anime => anime.mal_id !== action.payload.mal_id)
             };
         case "MOVE_ANIME_BACK_TO_WATCHLIST":
             return {
