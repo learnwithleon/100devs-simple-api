@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #d2d2d2;
+  background-image: url("https://i.ibb.co/rsNDbSw/tuxpi-com-1612506991-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom left;
+}
+
+main {
+  margin-top: 5rem;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  padding: 2%;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Bad Script', cursive;
+  text-align: center; /*mobile only*/
+  margin-bottom: 0;
+}
+
+button {
+  display: block;
+  padding: 3rem;
+  background-color: rgba(240,240,240);
+  border-radius: 25%;
+}
+
+button:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+p,
+button {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+p {
+  margin-top: -1rem;
+  margin-bottom: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3.75rem;
+  font-family: 'Bad Script', cursive;
+  text-align: right;
+}
+
+img {
+  display: block;
+  margin: 2rem auto 0 auto;
+  width: 100px;
+}
+
+#bookTitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.results {
+  display: grid;
+  padding: 10%;
+}
+
+@media only screen
+  and (min-device-width: 800px) {
+
+  main {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 5rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  p,
+  button {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .results {
+    padding: 5% 5% 2% 40%;
+  }
+}
