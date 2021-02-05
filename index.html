@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../weatherApp/dist/main.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+
+        <section class="forecast">
+            <div class="forecast__header">
+                <h1 class="heading-primary">Weather Forecast</h1>
+            </div>
+
+            <div class="forecast__conditions">
+                <div class="forecast__conditions__now">
+                    <h1 class="condition">Temperature Now</h1>
+                    <img class="img1" />
+                    <h2 class="temp__now">50% <span>ºC</span></h2><span>ºC</span>
+                </div>
+                <div class="forecast__conditions__feels">
+                    <h1 class="condition">Feels Like</h1>
+                    <img class="img2" />
+                    <h2 class="temp__feels">50% <span>ºC</span></h2><span>ºC</span>
+                </div>
+            </div>
+
+            <div class="forecast__input">
+                <input type="text" placeholder="Rio de Janeiro"></input><button class="btn" type="submit">Search!</button>
+            </div>
+
+            <div class="forecast__footer">
+                <h2 class="heading-secondary">Input your city!</h2>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer__text"><h3 class="heading-terciary">@MPF\DEV</h3></div>
+        </section>
+
+    </div>
+
+    <script src="../weatherApp/js/script.js"></script>
+  </body>
+</html>

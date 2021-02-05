@@ -1,0 +1,28 @@
+input {
+  padding: 2rem 3rem;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+
+  font-weight: 300;
+  box-shadow: 0 2rem 4rem rgba(black, 0.15);
+}
+
+.btn {
+  padding: 2rem 3rem;
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgb(73, 73, 73);
+  color: rgb(55, 120, 139);
+  transition: all 0.2s;
+  margin-left: 2rem;
+  box-shadow: 0 2rem 4rem rgba(black, 0.15);
+
+  &:hover {
+    transform: scaleY(-0.5rem);
+  }
+  &:active {
+    transform: scaleY(1rem);
+  }
+}

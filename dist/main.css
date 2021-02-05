@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+  margin-top: 5rem;
+  background-color: #ebebeb;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.forecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.forecast__header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 148, 148, 0.26);
+}
+
+.forecast__input {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.forecast__conditions {
+  display: none;
+  width: 80%;
+  padding-top: 5rem;
+}
+
+.forecast__conditions__now {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.forecast__conditions__feels {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 5rem;
+  background-color: #333333;
+  width: 100%;
+  color: white;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+}
+
+.condition {
+  font-size: 2rem;
+}
+
+.heading-terciary {
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 2rem 3rem;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 300;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  padding: 2rem 3rem;
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: #494949;
+  color: #37788b;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 2rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  -webkit-transform: scaleY(-0.5rem);
+  transform: scaleY(-0.5rem);
+}
+
+.btn:active {
+  -webkit-transform: scaleY(1rem);
+  transform: scaleY(1rem);
+}
+/*# sourceMappingURL=main.css.map */
