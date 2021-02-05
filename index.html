@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="btns">
+			<button class="btn" id="shuffle">Click to shuffle deck</button>
+			<button class="btn" id="throw">Click to throw your card</button>
+			<button class="btn" id="inst">Rules and How To Play?</button>
+		</div>
+		<div class="keepCards">
+			<span class="hidden" id="urCardLabel">YOUR CARD</span>
+			<span class="hidden" id="compCardLabel">COMP CARD</span>
+		</div>
+		<div class="keepCards" id="margins">
+			<img src="" class="hidden card" id="userCard">
+			<img src="" class="hidden card" id="compCard">
+		</div>
+		<div class="winMessage">
+			<h1 id="insertWin"></h1>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
