@@ -1,0 +1,59 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+}
+.main, .instructions, .otherDrinks {
+  display: flex;
+  justify-content: center;
+}
+.img, .description {
+  margin: 1rem;
+  width: 20%;
+}
+img {
+  width: 24rem
+}
+p {
+  font-weight: bold;
+}
+.instructions p {
+  width: 50rem;
+}
+span {
+  font-weight: normal;
+}
+.recs {
+  width: 50rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
