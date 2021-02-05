@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+html {
+  background: darkgrey;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin: 30px auto;
+}
+
+.animal_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cat, .dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  margin: 0 30px 30px 30px;
+  padding: .2em .5em;
+  font-size: 3rem;
+  color: white;
+  border-radius: 5px;
+  background: seagreen;
+  cursor: pointer;
+}
+
+.dog {
+  border-radius: 5px;
+  background: royalblue;
+}
+
+.fact {
+  width: 350px;
+  margin: auto;
+  font-size: 2rem;
+  background: lightgrey;
+}
+
+.royalblue_bg {
+  background: royalblue;
+}
+
+.seagreen_bg {
+  background: seagreen;
+}
