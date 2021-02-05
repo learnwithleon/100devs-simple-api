@@ -1,0 +1,61 @@
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+  margin-top: 5rem;
+
+  background-color: rgb(235, 235, 235);
+  border-radius: 3rem;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.26);
+  }
+
+  &__input {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  &__conditions {
+    display: none;
+    width: 80%;
+
+    padding-top: 5rem;
+
+    &__now {
+      flex: 0 0 50%;
+      text-align: center;
+    }
+
+    &__feels {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 5rem;
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  color: white;
+
+  &__text {
+    text-align: center;
+  }
+}
+
+span {
+  font-size: 1.2rem;
+}
