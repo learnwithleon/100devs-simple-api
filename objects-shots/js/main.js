@@ -142,11 +142,3 @@ function getTea() {
       document.querySelector("#shots4").innerText = data.drinks[18].strMeasure4;
     });
 }
-//drinks
-//Gin
-//vodka
-//Margarita
-//Whiskey
-//Pina Colda
-//Mai
-//Long Island Tea
