@@ -1,0 +1,36 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  max-width: 300px;
+  max-height: 300px;
+  border: 3px solid red;
+}
+section {
+  height: 30vh;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+h4 {
+  margin-bottom: 20px;
+}
+dd {
+  margin-bottom: 15px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
