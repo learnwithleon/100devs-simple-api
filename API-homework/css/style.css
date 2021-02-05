@@ -1,0 +1,56 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+button{
+  font-size: 3rem;
+  line-height: 4rem;  
+  border-radius: 1rem;
+  border: none;
+  background: rgb(168, 202, 247);
+  text-align: center;
+  outline: none;
+  margin: 5rem;
+  padding: 1rem;
+}
+
+h1, h2, h3{
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  margin: 4rem;
+  font-size: 3rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
