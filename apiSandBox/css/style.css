@@ -1,0 +1,70 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  
+  :root {
+      --primary-color: #EDE9E5;
+      --secondary-color: #0FAAAB;
+      --dark-color: #002240;
+      --light-color: #f4f4f4;
+      --success-color: #5cb85c;
+      --alert-color: #d9534f;
+  
+  }
+  
+   /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-family: 'lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #333;
+  }
+  
+  h1, h2, h3{
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 10px 0;
+      /* text-align: center; */
+  }
+  
+  img {
+      width: 25%;
+      display: block;
+      margin: 0 auto;
+  }
+  
+  code, pre {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+  }
