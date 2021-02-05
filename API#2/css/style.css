@@ -1,0 +1,44 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  margin-top: 20%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(86, 6, 97);
+  background-image: url('http://oldbasford.weebly.com/uploads/3/5/6/2/3562023/1551753_orig.png');
+  background-size: cover;
+}
+
+label, input {
+  margin: 2rem auto;
+}
+
+input {
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(86, 6, 97);
+}
+
+#actButton {
+  margin: 0 20%;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(86, 6, 97);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
