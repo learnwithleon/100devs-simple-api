@@ -25,8 +25,8 @@ img{
 /*******************************************/
 body{
   font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   background-color: #008f7a;
-
 }
 
 .btn{
@@ -78,60 +78,78 @@ body{
   text-align: center;
 }
 
-.searchCard input{
-  margin-bottom: 2rem;
-  border-radius: .4rem;
-  padding: .8rem 1rem;
-  border-style: none;
-  width: 95%;
- 
+.userInput ::placeholder{
+  color: grey;
+}
+
+
+.searchBtn{
+  margin-bottom: 1rem;
 
 }
 
-.searchCard input:focus{
-   border-style: solid;
-  border-color: green;
+.errorMessage{
+  display: none;
+  background-color: rgb(228, 64, 64);
+  padding: 2rem;
+  border-radius: .4rem;
+  color: white
+}
+.errorMessage.active{
+  display: flex;
 }
 
 /* SEARCH DRINKS SELECTION  ENDS*/
 
 /* DRINK SELECTION */
 
-.drinkSelection legend {
-  margin-top: 1rem;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 300;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .drinkSelection {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .active {
   display: flex;
-
-}
-.fieldset{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
-
-
- .inputForm input{
-   margin: .6rem;
+.getRecipeBtn {
+  padding: 1rem;
+  width: 70%;
+  
 }
+
+
+.inputForm{
+  display: block;
+
+
+  
+} 
+
+
+  .inputForm input{
+
+  margin-right: .5rem;
+  padding: 1rem;
+
+} 
+
+ .inputForm label{
+ 
+   margin-right: .5rem;
+ 
+}  
 
 /* DRINK SELECTION  ENDS*/
 
 .imgContainer {
-  margin-top: 2rem;
+  margin: 2rem;
   height: 16rem;
   width: 16rem;
 
@@ -149,29 +167,28 @@ body{
   font-weight: 400;
   align-self: flex-start;
   
+  
 
+}
+.ingredients h4 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color:#425767;
+}
+
+.recipeIngredients {
+  padding-left: 1.6rem;
 }
 
 .recipeIngredients li{
-  display: inline-block;
   margin-top: .4rem;
-  list-style: none;
-  color: #008f7a;
-
-}
-.measures {
-  margin-top: 1rem;
-  font-weight: 400;
-  align-self: flex-start;
   
-}
-.recipeMeasures li{
-  display: inline-block;
-  margin-top: .4rem;
-  list-style: none;
   color: #008f7a;
+  list-style-type: square;
 
 }
+
 
 /* INGREDIENTS SECTION ENDS*/
 
@@ -210,6 +227,7 @@ body{
   margin-top: 1.6rem;
  
   line-height: 2rem;
+  color:#425767;
 
 
 }
