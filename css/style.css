@@ -1,0 +1,91 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:aliceblue;
+  font-weight: 500;
+}
+/******************************************
+/* COLOURS, BORDERS, and SUCH
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  color: rgb(51, 77, 100);
+  background-color: none;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid rgb(51, 77, 100);
+  padding: 1rem;
+}
+.triviaMain {
+  background: url(../img/spotlight.jpg) no-repeat center;
+  background-size: cover;
+}
+.questionCard {
+  padding: 3rem;
+  border-top-right-radius: 55px;
+  border: 0.25px dashed white;
+}
+
+ul li::before {
+  content: "\1F389";  /* Add content: \2022 is the CSS Code/unicode for a bullet */ /* 1F36D -- lollipop*/
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-right: 1rem;
+}
+
+ul li::after {
+  content: "";
+  margin-right: 1rem;
+}
+
+
+.answerReveal {
+  display: inline-block;
+  border: 1px dotted rgb(147, 180, 211);
+  /* margin: .5rem 1rem; */
+}
+
+/******************************************
+/* LAYOUT and SPACING and SUCH
+/*******************************************/
+* {
+  line-height: 1.6rem;
+}
+
+.triviaMain {
+  width: 100vw;
+  height: 100vh;
+}
+
+.triviaMain, .questionCard {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#questionP {
+  text-align: center;
+  max-width: 175px;
+}
+
+h1 {
+  display: inline-block;
+  text-align:center;
+  border-bottom: 0.25px dashed black;
+  margin-bottom: 2rem;
+}
+
