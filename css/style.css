@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;1,100;1,200;1,300;1,500;1,800&display=swap');
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  background-color: #008f7a;
+}
+
+.btn{
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to right bottom, #008f7a, #00a97e, #00c379, #00dc6a, #08f450);
+  transition-duration: 0.8s;
+
+}
+
+.btn:hover {
+  background: #008F7A;
+  padding: .5rem 1.8rem;
+}
+
+
+
+.wrapper{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+
+}
+
+/* SEARCH DRINKS SELECTION */
+.searchCard{
+  background-color: #845ec2;
+  border-radius: .8rem;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  
+}
+
+.searchCard h1{
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.userInput ::placeholder{
+  color: grey;
+}
+
+
+.searchBtn{
+  margin-bottom: 1rem;
+
+}
+
+.errorMessage{
+  display: none;
+  background-color: rgb(228, 64, 64);
+  padding: 2rem;
+  border-radius: .4rem;
+  color: white
+}
+.errorMessage.active{
+  display: flex;
+}
+
+/* SEARCH DRINKS SELECTION  ENDS*/
+
+/* DRINK SELECTION */
+
+
+
+.drinkSelection {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.active {
+  display: flex;
+ 
+}
+
+.getRecipeBtn {
+  padding: 1rem;
+  width: 70%;
+  
+}
+
+
+.inputForm{
+  display: block;
+
+
+  
+} 
+
+
+  .inputForm input{
+
+  margin-right: .5rem;
+  padding: 1rem;
+
+} 
+
+ .inputForm label{
+ 
+   margin-right: .5rem;
+ 
+}  
+
+/* DRINK SELECTION  ENDS*/
+
+.imgContainer {
+  margin: 2rem;
+  height: 16rem;
+  width: 16rem;
+
+}
+.imgContainer img{
+  max-width:100%;
+  max-height:100%;
+  border-radius: .4rem;
+  
+
+}
+
+/* INGREDIENTS SECTION */
+.ingredients {
+  font-weight: 400;
+  align-self: flex-start;
+  
+  
+
+}
+.ingredients h4 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color:#425767;
+}
+
+.recipeIngredients {
+  padding-left: 1.6rem;
+}
+
+.recipeIngredients li{
+  margin-top: .4rem;
+  
+  color: #008f7a;
+  list-style-type: square;
+
+}
+
+
+/* INGREDIENTS SECTION ENDS*/
+
+
+/* RECIPE SECTION */
+.recipeCard{
+  display: none;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  border-radius: .4rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe9ff;
+  max-width: 75%;
+
+}
+.active {
+  display: flex;
+
+}
+
+.recipeCard h2 {
+  color: #2f4858;
+  font-size: 1.9rem;
+  font-weight: 300;
+
+}
+.recipeCard h3 {
+  margin-top: 1.6rem;
+  color: #2f4858;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cocktailRecipe{
+  margin-top: 1.6rem;
+ 
+  line-height: 2rem;
+  color:#425767;
+
+
+}

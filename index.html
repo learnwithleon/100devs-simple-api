@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>The Cocktail DB</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="searchCard">
+        <h1>
+          Thirsty? <br />
+          Search for a cocktail...
+        </h1>
+        <input class="userInput" type="text" name="" placeholder="blue margarita" />
+        <button class="searchBtn btn" type="button" name="button">
+          Search
+        </button>
+        <div class="errorMessage">
+          <p>Have you entered a proper cocktail name?</p>
+        </div>
+        <div class="drinkSelection">
+          <fieldset class="fieldset">
+            <legend>Which recipe would you like?</legend>
+            <form class="inputForm">
+              
+            </form>
+          </fieldset>
+          <button class="getRecipeBtn btn" type="button" name="button">
+            Get Recipe
+          </button>
+        </div>
+  
+      </div>
+
+      <div class="recipeCard">
+        <h2 class="recipeTitle">Name</h2>
+        <div class="imgContainer">
+          <img src="" alt="drink image">
+        </div>
+     
+        <div class="ingredients">
+          <h4>Ingredients:</h4>
+          <ul class="recipeIngredients">
+          </ul>
+        </div>
+        <!-- <div class="measures">
+          <h4>Measures:</h4>
+          <ul class="recipeMeasures">
+          </ul>
+        </div> -->
+
+        <h3>Instructions</h3>
+        <p class="cocktailRecipe">
+          Search for a cocktail and your recipe will appear here
+        </p>
+      </div>
+    </section>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
