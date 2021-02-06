@@ -4,8 +4,6 @@ function getJoke() {
     fetch("https://official-joke-api.appspot.com/random_joke")
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-    console.log(data)
-    console.log(data.setup)
     document.querySelector('#joke').innerHTML = data.setup
     document.querySelector('.getAnswer').addEventListener("click", getAnswer)
     function getAnswer() {
