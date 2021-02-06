@@ -1,0 +1,41 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background: rgba(46, 99, 222, 0.7);
+  color: white;
+  
+}
+
+div {
+  text-align: center;
+  margin: 50px;
+}
+
+input {
+  border: solid lightblue;
+  border-radius: 0 0 0 5px;
+  padding: 5px;
+
+}
+
+button {
+  border: solid lightblue;
+  padding: 5px;
+  border-radius: 0 20px 20px 0;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
