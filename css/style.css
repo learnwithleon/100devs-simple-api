@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+h1{
+    font-size: 25px;
+}
+#input, #getPoke{
+    height: 20px;
+    box-sizing: unset;
+    outline: 5px ridge rgb(194, 194, 194);
+    outline-offset: -6px;
+    border: 4.5px solid black;
+    border-radius: 2px;
+    background-color: white;
+}
+#pokeStuff{
+    width: 100%;
+    height: 50%;
+    margin: 5% 0;
+    display: flex;
+}
+
+#loading {
+    
+    position: absolute;
+    
+}
+
+#box {
+    border: 5px ridge  rgb(189, 48, 48);
+    width: 50%;
+    max-width: 400px;
+    margin: 0 0 0 auto;
+    height: 250px;
+    box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.431);
+    border-radius: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 2s;
+}
+
+#box img{
+    width: auto;
+    height: 60%;
+    margin: 0 auto;
+    opacity: 0;
+    
+}
+
+#pokeInfo {
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.431);
+    border: 5px ridge  rgb(189, 48, 48);
+    width: 30%;
+    background-color: rgba(0, 204, 255, 0.37);
+    height: 250px;
+    margin: 0 auto 0 0;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#name, #type {
+    text-transform: capitalize;
+}
