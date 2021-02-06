@@ -1,0 +1,28 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url("https://imgur.com/0CmcKST.jpg");
+  repeat: no-repeat;
+  background-size: cover;
+}
+
+
+img{
+  display: block;
+  margin: 0 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
