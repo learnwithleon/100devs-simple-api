@@ -1,0 +1,73 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  height: 800px;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1584994799933-e4f717e88632?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80")
+    no-repeat;
+  background-size: cover;
+  color: rgb(151, 151, 182);
+}
+
+#textDecoration {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  padding: 1%;
+  background-color: white;
+  border-radius: 10px;
+  height: 10%;
+  text-align: center;
+  margin: 10%;
+}
+
+h2 {
+  padding: 1%;
+  background-color: white;
+  border-radius: 10px;
+  height: 10%;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 30%;
+}
+
+button {
+  border: none;
+  width: 20%;
+  border-radius: 10px;
+  background-color: white;
+  height: 40px;
+  color: rgb(151, 151, 182);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
