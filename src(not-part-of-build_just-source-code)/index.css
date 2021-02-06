@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #b3b3b3;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App *{
+  box-sizing: border-box;
+  transition: all .05s ease-in-out;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#heading{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.container{
+  display: flex;
+  width: 600px;
+}
+.container.recommendations {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 80%;
+  /* box-shadow: inset -10px 0px 10px 1px #05050596, inset 10px 0px 10px 1px #05050596; */
+  margin-bottom: 6rem;
+}
+.recommendation{
+  margin: 0 1rem;
+  position: relative;
+  /* height: 32rem; */
+}
+.recommendation *{
+  margin: 0;
+}
+.container.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.query-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+}
+.form-control{
+  margin-bottom: .7rem;
+  width: 100%;
+}
+.form-control > label{
+  color: white;
+}
+.fa-question-circle{
+  font-size: 1rem;
+  margin-left: 5px;
+  color: #535353;
+}
+.fa-question-circle:hover{
+  color: white;
+}
+.container form input{
+  background-color: #535353;
+  border-radius: 2px;
+  height: 30px;
+  border: none;
+  width: 100%;
+  padding: 0 1rem;
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+  background-color: #535353;
+}
+.container form input::placeholder{
+  color: #929292;
+}
+
+.form-control.genre{
+  height: 200px;
+  overflow: hidden;
+}
+
+.boxes-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90%;
+}
+
+.boxes-container::-webkit-scrollbar-track, .container.recommendations::-webkit-scrollbar-track {
+  border: none;
+  padding: 2px 0;
+  background-color: #1b1b1b;
+}
+.boxes-container.key::-webkit-scrollbar-track,.container.recommendations::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.boxes-container::-webkit-scrollbar,.container.recommendations::-webkit-scrollbar {
+  width: 10px;
+}
+
+.boxes-container::-webkit-scrollbar-thumb, .container.recommendations::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #1db954;
+  border: 1px solid #000;
+}
+
+/* styling for container that holds each checkbox in the form */
+.chk-box-container {
+  background: #212121;
+  position: relative;
+  padding: 5px 20px;
+  margin: 0 3px 12px 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 20px;
+  border: 1px solid #b3b3b315;
+  color: white;
+}
+
+/* Hide the browser's default checkbox */
+.chk-box-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+label{
+  display: block;
+  font-size: 1.5rem;
+}
+.label-spacing{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+input{
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:focus{
+  outline: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  background-color: none;
+}
+
+/* On mouse-over, add a grey background color */
+.chk-box-container:hover input ~ .checkmark {
+
+}
+
+.chk-box-container input:checked ~ .chk-box-container {
+	box-shadow: 2px 3px 3px #1db954;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chk-box-container input:checked ~ .checkmark {
+  background-color: none;
+ 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+
+/* Show the checkmark when checked */
+.chk-box-container input:checked ~ .checkmark:after {
+  display: block;
+  border-color: #1db954;
+}
+
+/* Style the checkmark/indicator */
+.chk-box-container .checkmark:after {
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#submit{
+  background-color: #1db954;
+  font-size: 2rem;
+  color: white;
+  height: 2.5rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 82%;
+  
+}
+
+.green-glow{
+  box-shadow: 0px 0px 6px 0px #24ff3ffa;
+}
+.rs-slider {
+  position: relative;
+  width: 200px;
+  margin: .25rem 1rem;
+}
+.container.slider {
+  justify-content: flex-end;
+  overflow-x: hidden;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.rs-slider-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f2f2f5;
+  cursor: pointer;
+}
+.rs-slider-bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #535353;
+  cursor: pointer;
+}
+.rs-slider-progress-bar {
+  position: absolute;
+  height: 6px;
+  border-radius: 3px 0 0 3px;
+  background-color: #1db954;
+}
+.rs-slider-progress-bar {
+  position: absolute;
+  height: 6px;
+  border-radius: 3px 0 0 3px;
+  background-color: #1db954;
+}
+.rs-slider-handle{
+  position: relative;
+  transition: all .01s ease-in-out;
+}
+.rs-slider-handle:hover::before {
+  box-shadow: 0 0 0 4px rgba(204, 233, 255, 0.4);
+}
+.rs-slider-handle:hover::before {
+  box-shadow: 0 0 0 4px rgba(204, 233, 255, 0.4);
+}
+.rs-slider-handle:focus::before {
+  box-shadow: 0 0 0 4px rgba(204, 233, 255, 0.4);
+}
+.rs-slider-handle:focus::before {
+  box-shadow: 0 0 0 4px rgba(204, 233, 255, 0.4);
+}
+.rs-slider-handle::before {
+  content: '';
+  position: absolute;
+  top: -11px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #1db954;
+  background-color: #1db954;
+  margin-left: -6px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.rs-tooltip.rs-slider-tooltip.placement-top{
+  display: none;
+}
+
+.rec-preview{
+  position: absolute;
+  top: 150px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.control-text{
+  display: none;
+}
+.video-js >*{
+  display: none;
+}
+.video-js{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.video-js:focus{
+  outline: none;
+}
+.vjs-control-bar{
+  display: block !important;
+}
+.vjs-control-bar > *{
+  display: none;
+}
+.vjs-play-control{
+  display: block !important;
+  position: relative;
+  background: #212121cb;
+  border: none;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+.vjs-play-control:focus{
+  outline: none;
+}
+.vjs-play-control > *{
+  color: white;
+}
+
+@media (max-width: 600px){
+  .container.form{
+    width: auto;
+    margin: 2rem 1rem;
+  }
+  #heading{
+    margin: 1rem 1rem .5rem 1rem;
+    font-size: 2.5rem;
+  }
+}
