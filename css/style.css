@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(#E3E3E1, #C8BC17, #E0E0DE);
+}
+h1{
+  font-family: 'Caveat', cursive;
+  display: inline-block;
+  margin-bottom: 0;
+}
+h2{
+  text-align: left;
+  font-size: 3rem;
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  margin: 0 10px;
+  display: inline-block;
+}
+h3{
+  font-size: 1.6rem;
+  margin: 0;
+  display: inline-block;
+}
+span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+a:active{
+  text-decoration: none;
+  color: aquamarine;
+}
+
+  button{
+    font-size: 1.7rem;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient( #FA491F 58%, 78%, #E4E4E2 0%, 24.49%, #E1E0DE 100%);
+    border: none;
+    border-radius: 50%;
+    padding-left: 10px;
+    margin: 3px;
+    outline: none;
+  }
+  button:hover{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+  }
+
+.hidden{
+  display: none;
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+#start{
+  width: 80%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#title{
+  width: 70%
+}
+#buttonDiv{
+  width:20%;
+}
+#tacoFancy{
+  margin-top: 28px;
+}
+
+
+#recipes{
+  width: 80%;
+  background: white;
+  padding: 30px;
+}
