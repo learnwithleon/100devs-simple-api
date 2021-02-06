@@ -1,0 +1,16 @@
+body{
+    font-size: 2rem;
+    color: red;
+    background: black;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+input , button{
+font-size: 1.5rem;
+
+}
+
+h2{
+    font-size:5rem;
+}
