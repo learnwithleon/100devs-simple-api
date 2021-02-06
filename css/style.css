@@ -1,0 +1,54 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+.hidden{
+  display: none;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+.btn{
+  background: rgb(0, 82, 136);
+  color: rgb(167, 169, 172);
+}
+.btn:hover{
+  background: rgb(0, 82, 136, 0.9);
+  color: rgb(167, 169, 172, 0.9);
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-color: rgb(255, 235, 205);
+  text-align: center;
+}
+.title{
+  font-size: 3rem;
+}
+.wrap1{
+  width: 80%;
+  margin: 0 auto;
+}
+.wrap2{
+  width: 80%;
+  margin: 0 auto;
+}
+.imgContainer{
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  background-size: contain;
+}
+.vid{
+  margin: 2rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
