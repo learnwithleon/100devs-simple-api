@@ -1,0 +1,28 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  margin: 0 20px;
+  background-image: url("https://imgur.com/xs1BPqS.jpg");
+  background-size: cover;
+  text-shadow: 1px 1px darkgoldenrod;
+}
+
+img{
+  display: block;
+  margin: 0 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
