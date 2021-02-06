@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>SpaceX Mission Control || Using SpaceX Open API</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1 class='title'>SpaceX Mission Control</h1>
+		<nav class='flex'>
+			<button id='latestLaunch' class='btn' type="button" name="button">Get Latest Launch</button>
+			<button id='roadsterButton' class='btn' >Where's the Roadster?</button>
+		</nav>
+		<section class='wrap1 hidden'> 
+		  <!-- <input type="date" name="" value=""> -->
+		  
+		  <h2 id='missionName' ></h2>
+		  <img id='autoCarousel' src="" alt="">
+		  <h3 id='missionDetails' ></h3>
+		  
+		  <!-- <button class='btn' ><a  href="">Watch Webcast</a></button> -->
+		  <div class='vid vid1'>
+			  <iframe id='webcast' width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+		  </div>
+	    </section>
+	    <section class='wrap2 hidden' >
+		  <h2 id='roadsterMiles' ></h2>
+		  <div class='imgContainer'><img id='roadsterImg' src="" alt=""></div>		  
+		  <div id='roadsterName' ></div>
+		  <h3 id='roadsterInfo' ></h3>
+		  <div class='vid vid2' >
+			  <iframe id='roadsterVideo' width="560" height="315" src="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+		  </div>
+	    </section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
