@@ -1,0 +1,26 @@
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 4rem;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 10px 8px #888888;;
+  padding: 10px;
+  background-color: lightseagreen;
+  cursor: pointer;
+}
