@@ -1,0 +1,248 @@
+* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;    
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(335deg, rgba(0, 70, 129, 0.8), rgba(55, 133, 171, 0.9), rgba(0, 177, 255, 0.5));
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 5%;
+}
+
+h1 {
+    padding-left: 2px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.left {
+   width: 30%;
+   margin: 25px auto 10px auto;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select {
+    box-sizing: border-box;
+    width: 75%;
+    height: 40px;
+    padding: 0 0 0 15px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    transition-property: border, box-shadow;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+
+input {
+    padding-left: 19px;
+}
+
+input:hover, input:focus, input:active, select:hover, select:focus {
+    border: 1px solid #ff9800;
+    box-shadow: 0 0 1px 1px #ff9800 inset;
+    outline: 0 none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-button-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 75%;
+    height: 25px;
+}
+
+.display {
+    width: 75%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    font-size: 1.4em;
+}
+
+.display h3 {
+    margin-bottom: 5px;
+}
+
+.display span {
+    font-weight: 200;
+    margin: 3px 0;
+}
+
+.today-heading, .forecast-heading {
+    visibility: hidden;
+    text-align: center;
+}
+
+.forecast-wrapper {
+    width: 60%;
+    margin-top: 45px;
+}
+
+.forecast-heading {
+    font-size: 1.8em;
+}
+
+#forecasts {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+
+.forecast-box {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forecast-descriptions-box, .forecast-temps {
+    text-align: center;
+}
+
+.forecast-descriptions-box {
+    margin-bottom: 15px;
+}
+
+.forecast-descriptions-box h3 {
+    margin-bottom: 10px;
+}
+
+span, h2 {
+    display: block;
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+
+.ripple-background {
+    position: fixed;
+}
+
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0 0 10px 3px white;
+}
+
+.large {
+    width: 30vw;
+    height: 30vw;
+    bottom: -15vw;
+    left: -15vw;
+    opacity: 0.65;
+}
+
+.medium {
+    width: 20vw;
+    height: 20vw;
+    bottom: -10vw;
+    left: -10vw;
+    opacity: 0.7;
+}
+
+.small {
+    width: 10vw;
+    height: 10vw;
+    bottom: -5vw;
+    left: -5vw;
+    opacity: .8;
+}
+
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .forecast-box {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    .forecast-box {
+        width: 33%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .ripple-background {
+        display: none;
+    }
+
+    .temp-button-container {
+        width: 50%;
+    }
+
+    input, select, button {
+        width: 30%;
+    }
+
+    .left, .forecast-wrapper {
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
