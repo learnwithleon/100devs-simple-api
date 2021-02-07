@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel API</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="searchTools">
+      <h1>Pick a country:</h1>
+      <input type="text" class="search" placeholder="Search Countries" />
+      <button class="countrySearch">Search</button>
+      <span> or </span>
+      <button class="randomBtn">Get Random Country</button>
+    </section>
+    <div class="dataWrapper">
+      <section class="resultsBody"></section>
+      <section class="currencyConverter hidden">
+        <i class="far fa-money-bill-alt"></i>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
