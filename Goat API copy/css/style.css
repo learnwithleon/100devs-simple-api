@@ -1,0 +1,42 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.resizeMePlease{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.centerMe{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html{
+  font-size: 62.5%;
+}
+body *{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+h1{
+  font-size: 5rem;
+}
