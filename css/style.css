@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: url("/img/bg.jpg");
+  background-size: cover;
+  height: 100%;
+  /* width: 100%; */
+}
+#title {
+  font-size: 36px;
+  padding-top: 1rem;
+}
+#mainCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  background: rgba(7, 170, 94, 0.8);
+
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 5px;
+}
+#artistChoice,
+#songChoice,
+#submit {
+  font-size: 24px;
+}
+#submit {
+  padding: 0 20px;
+}
+#artistChoice,
+#songChoice {
+  width: 215px;
+}
+#inputCon {
+  margin-top: 2rem;
+}
+#lyricsOut {
+  color: rgb(0, 0, 0);
+  padding: 0 2rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
