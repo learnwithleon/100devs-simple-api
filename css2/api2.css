@@ -1,0 +1,11 @@
+*{
+box-sizing: border-box;
+}
+button{
+  size: 12px
+}
+body{
+  text-align: center;
+  background-size: 35rem;
+  background-repeat: no-repeat;
+}
