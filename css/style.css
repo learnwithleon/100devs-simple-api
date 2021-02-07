@@ -1,0 +1,131 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  text-align: center;
+  margin: 5em;
+  background-color: rgb(248, 240, 232);
+  background-image: url("https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njd8fHdvcmxkfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: rgb(32, 31, 31);
+  text-shadow: 1px 1px 1px rgb(192, 237, 240);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  width: 60%;
+
+  display: block;
+  margin: 2em auto;
+
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  font-size: 3.4rem;
+  color: rgb(6, 20, 77);
+  text-shadow: 1px 2px 3px rgba(240, 241, 155, 0.858),
+    2px 4px 6px rgba(179, 185, 118, 0.817);
+}
+
+a,
+h2 {
+  color: rgb(3, 105, 46);
+  text-shadow: 1px 1px 1px rgb(197, 224, 39);
+}
+
+h2 {
+  font-size: 4.5em;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: rgb(62, 120, 197);
+  border-radius: 5px;
+  border: 2px solid rgb(6, 20, 77);
+  padding: 0.5em 1em;
+  color: rgb(238, 236, 236);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(65, 112, 2);
+  margin: 0 1rem;
+}
+
+input {
+  height: 2.6em;
+  width: 20%;
+  border-radius: 5px;
+  border: 2px solid rgb(6, 20, 77);
+}
+
+.resultsBody {
+  width: 60%;
+  flex-grow: 3;
+}
+
+.card {
+  min-width: 60%;
+  border: 2px solid rgb(9, 85, 15);
+  background-color: rgba(255, 255, 255, 0.664);
+  padding: 1em 2em;
+  margin-top: 3em;
+  border-radius: 20px;
+  color: rgb(9, 85, 15);
+  text-shadow: 1px 1px 1px rgb(197, 224, 39);
+}
+
+span,
+p {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.dataWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currencyConverter {
+  width: 30%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.664);
+  flex-grow: 1;
+  padding: 4rem 3rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 3.3rem;
+  align-self: start;
+  border: 2px solid rgb(9, 85, 15);
+  border-radius: 15px;
+  color: rgb(9, 85, 15);
+  text-shadow: 1px 1px 1px rgb(197, 224, 39);
+}
+
+.hidden {
+  display: none;
+}
