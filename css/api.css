@@ -1,0 +1,10 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-size: 35rem;
+  background-repeat: no-repeat;
+
+}
