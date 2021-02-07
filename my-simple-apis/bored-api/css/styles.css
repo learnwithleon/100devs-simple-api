@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+section:last-of-type {
+    text-align: center;
+    font-size: 1.5em
+}

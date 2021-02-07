@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+ width: 50%;
+ margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
