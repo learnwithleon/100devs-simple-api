@@ -1,0 +1,175 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button:active, button:focus{
+  outline: none;
+  border: inherit;
+}
+a:link, a:active, a:focus, a:visited{
+  color: inherit;
+  text-decoration: none;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+html{
+  font-size: 62.5%;
+}
+body *{
+  font-family: 'Work Sans', sans-serif;
+}
+h1{
+  font-size: 5rem;
+  font-weight: 500;
+}
+h2{
+  font-size: 3rem;
+}
+button{
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  background: #f9545b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px #fcb8a3;
+}
+button:hover{
+  transform: translate(0, 0);
+  cursor: pointer;
+  box-shadow: 0px 0px #fcb8a3;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.profileImg{
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  background:  rgba(238,239,237, .7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 10px solid #f9545b;
+  overflow: hidden;
+}
+
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+
+  /*
+  ========================================
+  SPECIFIC ITEMS
+  ========================================
+*/
+
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+body{
+  padding: 15vh 0;
+  background: linear-gradient(0deg, #EEEFED, #f3d9d0);
+}
+.centerMe{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+/*
+  ========================================
+  MINI LAYOUT
+  ========================================
+*/
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
