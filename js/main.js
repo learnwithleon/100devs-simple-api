@@ -1,8 +1,7 @@
-//Example fetch using pokemonapi.co
+
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  // const choice = document.querySelector('input').value
   const url = 'https://api.quotable.io/random'
 
   fetch(url)
