@@ -1,0 +1,73 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-image: url('https:/source.unsplash.com/MOAZR5m6wrw');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container{
+  width: 40%;
+  height: 500px;
+  border: 2px solid white;
+  margin-top: 80px;
+  padding: 90px 50px;
+  border-radius: 10px;
+  background-color: rgb(224,211,202);
+}
+
+button{
+  background-color: rgb(197,163,161);
+  height: 40px;
+  padding: 2px 10px;
+}
+
+h2{
+  margin-top: 30px;
+}
+h2, h3{
+  font-weight: lighter;
+  font-size: .9rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    overflow: hidden;
+    font-size: .75rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+  .container{
+    font-size: .8rem;
+  }
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
