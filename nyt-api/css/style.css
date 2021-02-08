@@ -1,22 +1,30 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
+html {
+  font-family: sans-serif;
+  background: #333333;
+  padding: 0 5em;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+h1 {
+  color: white;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.clear {
-	clear: both;
+li {
+  margin: .25em;
 }
-
+.topic {
+  background: tomato;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: .75rem;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
