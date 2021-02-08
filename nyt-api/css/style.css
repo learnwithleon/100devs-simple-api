@@ -40,20 +40,36 @@ li {
   background: brown;
 }
 
+.posted {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 .article1, .article2, .article3 {
-  background: darkgrey;
+  background: grey;
   margin-bottom: 20px;
+  padding: 10px;
+  /* border-radius: .25em; */
 }
 .url1, .url2, .url3 {
   color: white;
+  font-size: 1.25rem;
+}
+
+.url1:hover, .url2:hover, .url3:hover {
+  color: beige;
 }
 
 .author1, .author2, .author3 {
   color: azure;
+  font-size: .75rem;
+  margin-right: 10px;
 }
 
 .pubdate1, .pubdate2, .pubdate3 {
-  color: grey;
+  color: darkgrey;
+  font-size: .75rem;
 }
 /******************************************
 /* BASE STYLES
