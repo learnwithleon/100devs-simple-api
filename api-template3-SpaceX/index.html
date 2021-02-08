@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="referrer" content="no-referrer"/>
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>want a rocket launch?</h1>
+		<!-- //make it so that it counts down from 10, 9, 8, click  -->
+		
+		<button type="button" name="button">10... 9... 8...</button>
+
+		<h2>launch date: 
+			<span class="launchDate" ></span>
+		</h2>
+		<h2>Flight Number: 
+			<span class="flightNumber" ></span>
+		</h2>
+		
+		<h3> 
+			<img class="missionPatch" src="" alt="">
+		</h3>
+		
+		<h3 id="launchDetailsBox">launch details: 
+			<span class="launchDetails"></span>
+		</h3>
+		<h4>
+			<span class="failureReason"></span>
+		</h4>
+
+		<iframe id="webcast" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

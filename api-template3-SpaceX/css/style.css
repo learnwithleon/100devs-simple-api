@@ -1,0 +1,41 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ 
+body {
+background-image: url('https://media.npr.org/assets/img/2020/08/27/nasa-goods-real_wide-9168d715c2d4c488d7a0e594b397d7abdd969d9d.png');
+
+color: white;
+text-align: center;
+}
+
+#launchDetailsBox{
+width: 100%;
+text-align: center;
+}
+
+.launchDetails{
+  width: 70%;
+  text-align: center;
+}
+
+
+
+img{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
