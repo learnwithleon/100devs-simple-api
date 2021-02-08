@@ -34,20 +34,16 @@ const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${choice
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
       document.querySelector('.author3').innerText = data.response.docs[2].byline.original
       document.querySelector('.pubdate3').innerText = data.response.docs[2].pub_date
-      // document.querySelector('.line3').innerText = "-------------------------------------------------------------"
-      // document.querySelector('.url1').innerText = data.response.docs[0].web_url
     })
     .catch(err => {
       console.log(`error ${err}`)
@@ -62,13 +58,11 @@ function getWorldHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -88,13 +82,11 @@ function getUsHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -114,13 +106,11 @@ function getPoliticsHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -140,13 +130,11 @@ function getNyHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -166,13 +154,11 @@ function getBusinessHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -192,13 +178,11 @@ function getOpinionHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -218,13 +202,11 @@ function getTechHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -244,13 +226,11 @@ function getScienceHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -270,13 +250,11 @@ function getHealthHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -296,13 +274,11 @@ function getSportsHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -322,13 +298,11 @@ function getArtsHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -348,13 +322,11 @@ function getBooksHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -374,13 +346,11 @@ function getStyleHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -400,13 +370,11 @@ function getFoodHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -426,13 +394,11 @@ function getTravelHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -452,13 +418,11 @@ function getMagazineHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -478,13 +442,11 @@ function getTmagazineHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -504,13 +466,11 @@ function getRealestateHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url
@@ -530,13 +490,11 @@ function getVideoHeadlines() {
       document.querySelector('.url1').href = data.response.docs[0].web_url
       document.querySelector('.author1').innerText = data.response.docs[0].byline.original
       document.querySelector('.pubdate1').innerText = data.response.docs[0].pub_date
-      document.querySelector('.line1').innerText = "-------------------------------------------------------------"
       // article 2
       document.querySelector('.url2').innerText = data.response.docs[1].abstract
       document.querySelector('.url2').href = data.response.docs[1].web_url
       document.querySelector('.author2').innerText = data.response.docs[1].byline.original
       document.querySelector('.pubdate2').innerText = data.response.docs[1].pub_date
-      document.querySelector('.line2').innerText = "-------------------------------------------------------------"
       //article 3
       document.querySelector('.url3').innerText = data.response.docs[2].abstract
       document.querySelector('.url3').href = data.response.docs[2].web_url

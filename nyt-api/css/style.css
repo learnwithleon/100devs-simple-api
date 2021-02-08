@@ -7,23 +7,53 @@ html {
 h1 {
   color: white;
 }
+
+#search {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
 li {
   margin: .25em;
 }
+
 .topic {
   background: tomato;
   color: white;
   padding: 4px 8px;
   border-radius: 2px;
   font-size: .75rem;
+  cursor: pointer;
+}
+
+.topic:hover {
+  background: brown;
+}
+
+.article1, .article2, .article3 {
+  background: darkgrey;
+  margin-bottom: 20px;
+}
+.url1, .url2, .url3 {
+  color: white;
+}
+
+.author1, .author2, .author3 {
+  color: azure;
+}
+
+.pubdate1, .pubdate2, .pubdate3 {
+  color: grey;
 }
 /******************************************
 /* BASE STYLES
