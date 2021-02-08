@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+h2{
+    /* font-size: 4.236rem; */
+    font-size: 2.618rem;
+    font-weight: 600;
+    border-bottom: 1rem solid #bf2f38;
+}
+h3{
+    /* font-size: 2.618rem; */
+    font-size: 1.618rem;
+    color: #f59814;
+}
+span, i, p{
+    font-size: 1.618rem;
+}
+.padding-box{
+    padding: 2rem;
+}
+body{
+    background: #1c2524;
+}
+h1{
+    font-size: 6.854rem;
+    font-weight: 800;
+}
+.body{
+    display: flex;
+    
+}
+.team{
+    width: 25%;
+    position: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    width: 75%;
+    position: relative;
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.baller{
+    width: 31%;
+    border-radius: 5px;
+    padding: 1rem;
+    background: black;
+    margin: 1%;
+    transition: width 0.4s ease-out;
+}
+.baller.expanded{
+    width: 100%;
+}
+.logo{
+    width: 90%;
+}
+span{
+    display: block;
+}
+.hidden{
+    display: none;
+    /* transition: display 0.1s ease-in-out; */
+}
+.plusIcon{
+    text-align: right;
+}
+.position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.closeButton{
+    display: none;
+    text-align: right;
+}
+.margin-bottom{
+    margin-bottom: 1.618rem;
+}
+
