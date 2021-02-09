@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+html{
+  background-color: rgb(254, 217, 15);
+  font-size: 62.5%;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+  text-align: center;
+  color: rgb(62,89,189);
+  font-size: 6rem;
+  text-shadow: 2px 2px black;
+  font-style: bold;
+}
+
+.button{
+  text-align: center;
+}
+
+button{
+  text-align: center;
+  font-size: 1.2rem;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(62,89,189);
+}
+
+#day{
+  width: 10%;
+}
+
+select{
+  width: 20%;
+}
+
+#characterBox{
+  height: 520px;
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgb(62,89,189);
+  border-radius: 10px;
+  color: white;
+  padding-top: 1rem;
+  visibility: hidden;
+}
+
+img{
+  display: inline-block;
+  height: 300px;
+}
+
+h2{
+  font-size: 3rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+p{
+  font-size: 1.8rem;
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (min-width: 431px) and (max-width: 700px){
+  #characterBox{
+    width: 85vw;
+    height: 560px;
+  }
+  
+}
+@media only screen and (max-width: 430px) {
+  #characterBox{
+    width: 90vw;
+    height: 550px;
+  }
+  h1{
+    font-size: 2.5rem;
+    text-shadow: 1px 1px black;
+  }
+  
+} 
