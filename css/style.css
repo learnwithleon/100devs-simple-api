@@ -1,0 +1,46 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.flexContainer {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+div {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 60%;
+}
+
+button {
+  background-color: #22c67f;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+}
