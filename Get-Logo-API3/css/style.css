@@ -1,0 +1,39 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+html{
+  text-align: center;
+  background-color:aliceblue
+}
+
+h1{
+  font-size: 4rem;
+}
+
+input{
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+}
