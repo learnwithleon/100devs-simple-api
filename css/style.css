@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: inline;
+  margin: 0 auto;
+}
+
+body{
+  background-image: url(../images/foodappbg.jpg);
+  image-resolution: from-image;
+  text-align: center;
+  font-family: 'Sriracha', cursive;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1{
+  font-size: 75px;
+  color: black;
+}
+
+h2{
+  font-size: 50px;
+  color: black;
+}
+h3{
+  font-size: 60px;
+}
+h4{
+  font-size: 20px;
+  color: black;
+}
+
+section{
+  background: white;
+  color: black;
+}
