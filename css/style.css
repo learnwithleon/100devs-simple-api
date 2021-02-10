@@ -1,0 +1,15 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #9966ff;
+  color: #66ffff;
+  text-align: center;
+}
+img{
+  margin: 0 auto;
+}
+
+button{
+  background: #66ffff;
+  height: 23px;
+  width: 10%;
+}
