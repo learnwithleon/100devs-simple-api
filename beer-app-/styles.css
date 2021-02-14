@@ -1,0 +1,62 @@
+
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-family: 'Bungee Shade', cursive;
+    font: 1rem;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+
+.center {
+    font-size: 3rem;
+}
+.container-lg {
+    background-color: transparent;
+}
+
+
+#food {
+    max-width: fit-content;
+}
+
+#container {
+    margin: .313rem;
+}
+
+
+
+.beer {
+    border: 1px solid indigo;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: pink;
+    -webkit-box-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    -webkit-moz-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    box-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.beerImage {
+    padding: 10px;
+    height: 20px;
+    width: 50px;
+    order: 1;
+}
+
+.beerImage img {
+    width: 60px;
+}
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Pairology</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <!-- Onsen framework links -->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">  
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+</head>
+<body>
+
+    <ons-page modifier="full_bg">
+        <ons-toolbar>
+            <div class="center">Brew Pairology</div>
+        </ons-toolbar>
+
+        <section id="container">
+            <p></p><ons-input id="food" modifier="underbar" 
+            class="search-input search-input--material"
+            placeholder="Type food (ex burger) "></ons-input>
+
+            <p><ons-button modifier="large"
+                class="button button--material" id="buttonSearch">Lookup
+            </ons-button></p>
+
+                <!-- API result -->
+                <div id="result"></div>
+        </section>
+    </ons-page>
+
+    <!-- Javscript link -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</body>
+</html>
