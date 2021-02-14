@@ -1,0 +1,14 @@
+{
+  "name": "beer-app",
+  "version": "1.0.0",
+  "description": "Pairology beer app that offers recommendations for beer with food pairings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yamilet G.",
+  "license": "ISC",
+  "dependencies": {
+    "python": "0.0.4"
+  }
+}
