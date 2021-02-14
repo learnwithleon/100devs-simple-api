@@ -1,22 +1,16 @@
-# 🚀 #100Devs Simple API Homework
+# Stock Market Ticker App
 
-### Goal: Build an app using a simple API (homework called for three - you are submitting your best)
+https://stocktickerquotes.netlify.app/
 
-### How to submit your code for review:
+## Description
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+This is a stock market ticker quote app that uses the IEX Cloud API to pull current key data for a user inputted stock ticker. This is all made using HTML, CSS, and Javascript. It's a simple app demonstrating working knowledge of pulling data from API's. I hope to expand on this project by using the AMChart software to create a graph using historical data from the IEX Cloud API; allowing the user to have visualized interactive data points for the stock ticker of their choice. It was a lot of fun making this app and researching different API's and how to use them--getting into the nitty gritty of the documentation. This was also a useful exercise in reacquanting myself with CSS Grid to create a simple neat layout. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### 
+
+This app uses a hidden API Key 
+
+## Screenshot
+
+<img src="stock-market-ticker-app-before-screenshot.png">
+<img src="stock-market-ticker-app-after-screenshot.png">

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Stock Market, stock quotes, stock price lookup">
+	<meta name="author" content="Jeremy Seckinger">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stock Market Ticker Data</title>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">		
+	</head>
+	<body>
+		<section class="grid-container">
+			<article class="item1">
+			<h1>Stock Market Ticker Data</h1>
+                <span>Get stock quote by ticker symbol:</span>
+                <input type="text" name="" value="">
+                <button type="button" name="button">Get data</button>
+
+				<h2>Company</h2>
+				<span id="companyName"></span>
+				<h3>Key data points:</h3>
+			</article>
+			<article class="item2">
+				<ul>
+					<li>Latest Price: <span id="latestPrice"></span></li>
+					<li>Previous Close: <span id="previousClose"></span></li>
+					<li>Change: <span id="change"></span></li>
+					<li>Previous Volume: <span id="previousVolume"></span></li>
+					<li>Average Total Volume: <span id="avgTotalVolume"></span></li>
+				</ul>
+			</article>
+			<article class="item3">
+				<ul>
+					<li>Market Cap: <span id="marketCap"></span></li>
+					<li>PE Ratio: <span id="peRatio"></span></li>
+					<li>52 Week High: <span id="week52High"></span></li>
+					<li>52 Week Low: <span id="week52Low"></span></li>
+					<li>YTD Change: <span id="ytdChange"></span></li>
+				</ul>
+			</article>
+			<a href="https://iexcloud.io/" class="attribute item4">Data Provided by IEX Cloud API</a>
+	</section>		
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
