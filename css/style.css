@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:black;
+    padding: 0em;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    border-bottom: .2em solid white;
+    padding-bottom: 0;
+}
+
+.item2{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    background-color: gray;
+    border-bottom: .2em solid white;
+    border-left: 1px solid black;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    text-align: center;
+    background-color: gray;
+    border-bottom: .2em solid white;
+    border-right: 1px solid black;
+}
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    text-align: center;
+    background: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+    font-size: 2em;
+    color: white;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    color: white;
+    text-decoration: underline;
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.9em;
+    margin-top: 2em;
+    margin-bottom: .4em;
+    color: white;
+}
+
+span {
+    color: rgb(57,255,20);
+}
+
+h2 span {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+li {
+    font-weight: 900;
+    margin-top: .3em;
+}
+
+#companyName {
+    font-size: 1.5em;
+    color: rgb(57,255,20);
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
