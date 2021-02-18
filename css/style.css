@@ -1,0 +1,214 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+}
+
+/* -------BASE FONT STYLES--------*/
+
+* {
+  color: rgb(197,189,178);
+}
+
+
+
+/******************************************
+/* CSS GRID
+/*******************************************/
+
+#output {
+  grid-area: 1 / 2 / 2 / 4
+}
+
+#input {
+  grid-area: input;
+}
+
+#top-left {
+  grid-area: top-left;
+}
+
+#top-right {
+  grid-area: top-right;
+}
+
+#bottom-left {
+  grid-area: bottom-left;
+}
+
+#bottom-right {
+  grid-area: bottom-right;
+}
+
+body { 
+  display: grid;
+  grid-template-areas:
+    "top-left top-left top-right top-right"
+    "input input input input"
+    "bottom-left bottom-left bottom-right bottom-right";
+  grid-template-rows: 5fr 2fr 2fr;  
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  height: 100vh;
+}
+
+/******************************************
+/* OUTPUT
+/*******************************************/
+
+
+#output {
+  place-self: center;
+}
+
+#poke-info {
+  background-color: white;
+  padding: 10px;
+}
+
+
+h2,
+h3,
+p {
+  font-variant: small-caps;
+  font:'Raleway', sans-serif;
+  text-align: left;
+  
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-variant: normal;
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+
+#output img{
+  width: 250px;
+  margin: 10px;
+}
+
+/******************************************
+/* INPUT
+/*******************************************/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border-bottom: solid rgb(197,189,178) 5px;
+  border-top: solid rgb(197,189,178) 5px; */
+  padding: 40px;
+}
+
+input,
+button {
+  height: 40px;
+  width: 350px;
+}
+
+h1 {
+  font: 500 8rem 'Raleway', sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+}
+
+input {
+  font: 600 2.5rem 'Raleway', sans-serif;
+  padding: 2px;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+button {
+  font: 700 2.5rem 'Raleway', sans-serif;
+  padding: 2px;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+/******************************************
+/* BACKGROUND
+/*******************************************/
+
+
+
+#top-left,
+#top-right,
+#bottom-left,
+#bottom-right {
+  /* filter: blur(2px); */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+#img-top-left,
+#img-top-right,
+#img-bottom-left,
+#img-bottom-right {
+  display: grid;
+  height: 200px;
+  place-self: center;
+}
+
+#top-left {
+  background-image: url("images/bg-2.jpg");
+}
+
+#top-right {
+  background-image: url("images/bg-2.jpg");
+}
+
+#bottom-left {
+  background-image: url("images/bg-2.jpg");
+}
+
+#bottom-right {
+  background-image: url("images/bg-2.jpg");
+}
+
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+
+/* Stack the layout on small devices/viewports. */
+/* @media all and (max-width: 575px) {
+  body { 
+    grid-template-areas:
+      "nav" 
+      "article"
+      "ads"
+      "header"
+      "footer";
+    grid-template-rows: 1fr 5fr 1fr 3fr 1fr;  
+    grid-template-columns: 1fr;
+ }
+ img {
+   width
+ }
+} */
