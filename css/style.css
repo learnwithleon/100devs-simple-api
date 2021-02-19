@@ -10,6 +10,12 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  color: #496fb3;
+  font-family: Verdana, sans-serif;
+  margin: 30px;
+}
+
 img{
   display: block;
   margin: 0 auto;
@@ -17,19 +23,28 @@ img{
   width: 50%;
 }
 
-#title, #spellName, #spellDescription, #spellSchool, #subClasses, #subClassesList {
-  display: block;
+ul {
   text-align: center;
+  list-style: inside;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-body {
-  font-family: Verdana, sans-serif;
-  margin: 20px;
+#content {
+  background-color: aliceblue;
+  border: solid aliceblue;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 #searchDiv {
-  background-color: aliceblue;
+  align-content: space-around;
+  /* background-color: aliceblue;*/
+}
+
+
+#title, #spellName, #spellDescription, #spellSchool, #subClasses {
+  display: block;
+  text-align: center;
 }

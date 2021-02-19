@@ -3,7 +3,6 @@ document.querySelector('button').addEventListener('click', getFetch)
 let spellName = document.getElementById('spellName')
 let spellDescription = document.getElementById('spellDescription')
 let spellSchool = document.getElementById('spellSchool')
-let subClasses = document.getElementById('subClasses')
 let subClassesUl = document.getElementById('subClassesList')
 
 function getFetch(){
@@ -28,7 +27,6 @@ function populateSpellResults(data) {
     spellDescription.innerText = data.desc[0]
     spellSchool.innerText = data.school.name
 
-    subClasses.innerText = 'Sub-Classes'
     removeAllChildNodes(subClassesUl)
     data.subclasses.forEach(sc => {
         const li = document.createElement('li')
