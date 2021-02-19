@@ -17,7 +17,19 @@ img{
   width: 50%;
 }
 
+#title, #spellName, #spellDescription, #spellSchool, #subClasses, #subClassesList {
+  display: block;
+  text-align: center;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+body {
+  font-family: Verdana, sans-serif;
+  margin: 20px;
+}
+
+#searchDiv {
+  background-color: aliceblue;
+}

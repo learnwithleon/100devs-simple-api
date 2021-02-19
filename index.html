@@ -2,26 +2,32 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="DnD spell searcher!">
-    	<meta name="keywords" content="one, two, three">
+    	<meta name="description" content="DnD Spell Searcher">
+    	<meta name="keywords" content="dnd, d&d, dungeons, dragons, spells">
 
-		<title>DnD spell searcher!</title>
+		<title>DnD Spell Searcher</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<img src="img/dnd.jpg" alt="">
+		<img src="img/dnd.jpg" alt="Red Dragon">
 
-		<h1>Which Spell?</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Spell Data</button>
+		<h1 id="title">DnD 5e Spell Searcher</h1>
+		<div id="searchDiv">
+			<input id="searchSpell" type="text" name="" value="Acid Arrow">
+			<button type="button" name="button">Get Spell Data</button>
+		</div>
 
-		<h2>Name?</h2>
-		<h3>Class?</h3>
-		<h4>Sub Classes?</h4>
-		<ul></ul>
+		<h2 id="spellName"></h2>
+		<p id="spellDescription"></p>
+		<h3 id="spellSchool"></h3>
+
+		<h4 id="subClasses"></h4>
+		<div id="subClassesDiv">
+			<ul id="subClassesList"></ul>
+		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
