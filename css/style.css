@@ -16,13 +16,6 @@ body {
   margin: 30px;
 }
 
-img{
-  display: block;
-  margin: 0 auto;
-  height: 50%;
-  width: 50%;
-}
-
 ul {
   text-align: center;
   list-style: inside;
@@ -38,13 +31,6 @@ ul {
   padding: 20px;
 }
 
-#searchDiv {
-  align-content: space-around;
-  /* background-color: aliceblue;*/
-}
-
-
-#title, #spellName, #spellDescription, #spellSchool, #subClasses {
-  display: block;
+#title, #searchDiv, #spellName, #spellDescription, #spellSchool, #subClasses {
   text-align: center;
 }

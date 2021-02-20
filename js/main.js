@@ -1,4 +1,9 @@
 document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('input').addEventListener('keypress', function (e) {
+    if(e.key === 'Enter') {
+        getFetch()
+    }
+})
 
 let spellName = document.getElementById('spellName')
 let spellDescription = document.getElementById('spellDescription')
@@ -13,13 +18,25 @@ function getFetch(){
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
-            console.log(data)
-            populateSpellResults(data)
+            if (data.error === 'Not found') {
+                spellNotFound()
+            } else {
+                populateSpellResults(data)
+            }
         })
         .catch(err => {
             console.log(`error ${err}`)
-            alert('An error occurred while using the DnD API.')
+            alert('An error occurred.')
         });
+}
+
+function spellNotFound() {
+    populateSpellResults({
+        name: 'Spell Not Found',
+        desc: ['Pleas try a different spell name.'],
+        school: {name: ''},
+        subclasses: []
+    })
 }
 
 function populateSpellResults(data) {
