@@ -1,0 +1,36 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  color: #496fb3;
+  font-family: Verdana, sans-serif;
+  margin: 30px;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#content {
+  background-color: aliceblue;
+  border: solid aliceblue;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#title, #searchDiv, #spellName, #spellDescription, #spellSchool, #subClasses {
+  text-align: center;
+}
