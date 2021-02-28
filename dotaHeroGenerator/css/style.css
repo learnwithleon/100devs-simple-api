@@ -1,0 +1,174 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  visibility: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(47, 1, 3, 1) 50%,
+    rgba(42, 2, 3, 1) 100%
+  );
+  color: white;
+  height: 2em;
+  padding-top: 1.5%;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 60.5em;
+  background-image: url("https://wallpapercave.com/wp/PCGGiJM.jpg");
+  background-size: cover no-repeat no-repeat;
+}
+section {
+  width: 100%;
+  height: 40.5em;
+  border: 1px solid black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#randomHero {
+  display: none;
+}
+
+#strength {
+  display: none;
+}
+
+#agility {
+  display: none;
+}
+
+#intelligence {
+  display: none;
+}
+
+.btns {
+  list-style: none;
+  font-size: 1.5em;
+  width: 100%;
+  height: 7em;
+  padding: 20%;
+  border: none;
+  background: transparent;
+  align-content: center;
+  flex-flow: row nowrap;
+  color: white;
+}
+
+.btns:hover {
+  background: white;
+  color: red;
+  transform: scale(1.5);
+  /* margin-right: 300%; */
+  opacity: 1;
+}
+
+.btn-ul {
+  width: 50%;
+  height: 2em;
+  margin: 5% 25% 10% 25%;
+  padding: 0;
+  display: flex;
+}
+
+button {
+  align-items: center;
+}
+
+#getHero {
+  background-image: url("https://1000logos.net/wp-content/uploads/2019/03/Dota-2-Logo.png");
+  background-size: cover;
+  width: 65%;
+  height: 45em;
+  margin: 1.5% 17.5%;
+  opacity: 0.9;
+}
+
+#getHero:hover {
+  border: 7.5px solid red;
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+h2 {
+  clear: both;
+  text-align: center;
+  color: white;
+}
+h3 {
+  text-align: center;
+  color: white;
+}
+
+#heroImage {
+  width: 17.5%;
+}
+
+.stat-ul {
+  margin-left: 45%;
+}
+.stat-ul li {
+  color: white;
+}
+
+/* 
+
+
+// MEDIA QUERIES
+//
+
+*/
+
+@media screen and (min-width: 1680px) and (max-width: 1800px) {
+  #getHero {
+    width: 60%;
+    height: 45em;
+    margin: 0 20%;
+  }
+}
+
+@media screen and (min-width: 1590px) and (max-width: 1680px) {
+  #getHero {
+    width: 60%;
+    height: 40em;
+    margin: 0 22.5%;
+  }
+}
+@media screen and (min-width: 1465px) and (max-width: 1590px) {
+  #getHero {
+    width: 60%;
+    height: 35em;
+    margin-left: 27.5%;
+  }
+}
+
+@media screen and (max-width: 1465px) {
+  #getHero {
+    width: 20%;
+    height: 25%;
+    margin: 0 40%;
+  }
+}
