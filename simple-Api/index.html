@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>stoichiometry project</title>
+        <meta name="description" content="I really want to use api information to create an app where I can solve stoichiometry problems, and eventualy maybe more advanced info">
+        <meta name="keywords" content="chemistry, stoichiometry">
+        <meta name="viewport" content="width=device-width, initial-scale=1.25">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <h1>Stoichiometry Calculator</h1>
+        <h2>Welcome to my project!</h2>
+        <p>This will eventually be a valuable stoichiometry calculator for chemistry students. But right now, we are working on the first step! This is focused on interpretting <br>
+        I want to:<br><ul><li>Reject all inputs that are non-chemical</li><li>be able to retrieve information on valid molecules</li></ul></p>
+        <p>as of now, it will reject and provide a proper error if you have entered a syntax issue, such as using h2o instead of H2O. In the future, I will acount for this, but for focusing on data retrieval and organization, users must enter proper capitalization for molecules</p>
+        <p>but if you enter a properly capitalized molecule like, Na2CO3, an image of the molecule will appear at the bottom of the page</p>
+        <h3>
+            Dev Notes
+        </h3>
+        <p>the entire workflow from click-event to image propogating on the page is the result of 3 subsequent requests, 1 post and 2 get. I learned the basis of handling http requests efficiently through the use of async + await ES6 functionality.
+            I learned to effectively pass the results of promises into other promises to reliably arrive at what I am interested in.
+        </p>
+        <img src="https://media3.giphy.com/media/lOa0tPKiMLdqVdFiS8/giphy-downsized-large.gif">
+        <label for="user-input">input</label>
+        <input type="text" id="user-input">
+        <button>run</button>
+        <script src="js/main.js"></script>
+    </body>
+</html>
