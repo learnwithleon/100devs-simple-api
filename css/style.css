@@ -1,0 +1,109 @@
+
+/******************************************
+/* CSS
+/*******************************************/
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  padding-top: 2em;
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: rgb(232, 240, 254);
+}
+
+h1 {
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  text-align: center;
+  font-family: inherit;
+}
+
+#btn-container {
+  padding: 0.5em;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button {
+  text-transform: uppercase;
+  background: #B7490F;
+  font-family: inherit;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+#display {
+  height: 400px;
+  max-width: 70%;
+  margin: 1em auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 3em;
+  text-align: left;
+  font-size: 1.3rem;
+  color: black;
+  letter-spacing: 3px;
+  background-image: linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+  /* 
+  RAIN
+  background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+
+  SUNNY
+  background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+
+  CLOUDY
+  background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+}
+  */
+
+#mainInfo {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+#feelsLike {
+  padding-top: 2em;
+  text-align: center;
+}
+
+#maxmin {
+  display: flex;
+  padding-top: 2em;
+  justify-content: space-evenly;
+}

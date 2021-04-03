@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a example of an weather app using the Weather API">
+    <meta name="keywords" content="weather, app, api">
+    <title>Weather App</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Weather App</h1>
+    <form>
+        <input type="text" id="locationInput" placeholder="Ex. City Name,State Code, Country Code ">
+    </form>
+
+    <div id="btn-container">
+        <button id="checkRecent">Check Recent</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <section id="display">
+        <div id="mainInfo">
+            <div>
+                <h2></h2>
+                <h3></h3>
+            </div>
+            <h4 id="condition"></h3>
+        </div>
+
+        <div id="feelsLike">
+            <h3 id="feel"></h3>
+        </div>
+
+        
+        <div id=maxmin>
+            <h4 id="max"></h4>
+            <h4 id="min"></h4>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
